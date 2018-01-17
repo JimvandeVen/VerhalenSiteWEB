@@ -646,6 +646,10 @@ form input[type="password"]:invalid {
     display: block;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 /*GEFRUSTREERD*/
 
 .gefrustreerd {
@@ -742,7 +746,7 @@ p {
     background-image: url(images/verhalend_background.png);
     background-size: cover;
     overflow: visible;
-    
+
 
 }
 
