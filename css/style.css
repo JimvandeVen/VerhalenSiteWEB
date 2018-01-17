@@ -719,7 +719,7 @@ p {
 
 .indent {
     width: 15em;
-    float: left;
+    float: right;
     shape-outside: url(images/indent1.png);
 }
 
