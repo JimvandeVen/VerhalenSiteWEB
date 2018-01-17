@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>NS</h1>
+    </header>
+    <main>
+
+        <input checked class="tabInloggen" type="radio" id="inloggen" name="tabs">
+        <input class="tabAanmelden" type="radio" id="aanmelden" name="tabs">
+        <div class="tabs">
+
+            <label class="tabsInloggen" for="inloggen">inloggen</label>
+            <label class="tabsAanmelden" for="aanmelden">aanmelden</label>
+        </div>
+        <section class="inloggen">
+            <h2 class="loginH2">Inloggen</h2>
+            <form>
+                <label for="emailInlog">e-mail adres:</label>
+                <input id="emailInlog" type="email" placeholder="abc@email.com" class="formInput">
+                <label for="passwordInlog">wachtwoord:</label>
+                <input id="passwordInlog" type="password" placeholder="wachtwoord" class="formInput">
+                <input type="submit" value="inloggen" class="formButton">
+            </form>
+        </section>
+        <section class="aanmelden">
+            <h2 class="loginH2">Aanmelden</h2>
+            <form>
+                <label for="emailRegister">e-mail adres:</label>
+                <input id="emailRegister" type="email" placeholder="abc@email.com" class="formInput">
+                <label for="passwordRegister">wachtwoord:</label>
+                <input id="passwordRegister" type="password" placeholder="wachtwoord" class="formInput">
+                <label for="passwordVerify">wachtwoord verifïeren:</label>
+                <input id="passwordVerify" type="password" placeholder="wachtwoord" class="formInput">
+                <input type="submit" value="aanmelden" class="formButton">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

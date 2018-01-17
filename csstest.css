@@ -1,0 +1,10 @@
+.favoriet {
+    background-color: blue;
+    transform: rotate(80deg);
+}
+
+article {
+    background-color: white;
+    transition: background-color linear 1s;
+    
+}
