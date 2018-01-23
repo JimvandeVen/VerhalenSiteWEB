@@ -236,7 +236,8 @@ fieldset .titelFilter {
     padding-bottom: 0.5em;
     height: 1.7em;
 }
-fieldset{
+
+fieldset {
     padding-bottom: 0;
 }
 
@@ -477,7 +478,7 @@ article {
 
 .sorteren label {
     display: inline-block;
-    width: 90%;
+    width: 89%;
 }
 
 .sorteren input {
@@ -721,15 +722,27 @@ a:visited {
     background-position: center;
 }
 
-.gefrustreerd .odd p {
-    transform: rotate(-10deg)
+.gefrustreerd .odd {
+    transform: rotate(-10deg);
+    animation: roll 30s infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .gefrustreerd .even {
-    transform: rotate(-10deg)
+    transform: rotate(10deg);
 }
 
-
+.odd:nth-of-type(2) {
+    margin-left: 5em;
+}
 
 .mainGefrustreerd {
     position: relative;
@@ -741,7 +754,7 @@ a:visited {
 }
 
 .titel {
-    max-width: 80%;
+    max-width: 90%;
     max-height: 6em;
     margin-bottom: 3em;
 }
@@ -783,6 +796,7 @@ p {
     float: right;
     shape-outside: url(images/indent1.png);
 }
+
 
 /*VERWARDEMAN*/
 
@@ -928,9 +942,16 @@ p {
         width: 95%;
     }
 
-    .sorteerLampje {
-        width: 0.5em;
+    #sorteerLampje {
+        margin-top: 1em;
+        width: .5em;
         height: .5em;
+    }
+
+    .sorteerLampje {
+        margin-top: 1.5em;
+        width: 2em;
+        height: 2em;
     }
 
     .sluitSorteren {
@@ -997,7 +1018,7 @@ p {
     }
 
     .titel {
-        max-height: 10em;
+        max-height: 15em;
         margin-bottom: 3em;
     }
 
@@ -1074,13 +1095,13 @@ p {
     .verwardEven {
         background-position: center;
         background-clip: padding-box;
-        margin-left: 50%;
+        margin-left: 30%;
     }
 
     .verwardOdd {
         background-position: center;
         background-clip: padding-box;
-        margin-right: 50%;
+        margin-right: 10%;
     }
 
     .odd {
@@ -1093,7 +1114,6 @@ p {
     }
 
 
-    main .aanbevolen article:nth-of-type(1) {}
 }
 
 @media (min-width: 1023px) {
