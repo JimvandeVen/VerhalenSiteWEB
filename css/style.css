@@ -24,6 +24,10 @@ header {
     box-shadow: inset 0 -0.025rem 0 #e6e6e6;
 }
 
+#inlogKnop{
+    width: 2em;
+}
+
 .inlogPlek {
     height: 75%;
     width: 100%;
@@ -96,13 +100,13 @@ article dl {
 
 .comment {
     position: absolute;
-    width: 2em;
-    top: 0.4em;
-    left: 15.5em;
+    width: 3em;
+    top: 0.2em;
+    left: 14.5em;
 }
 
 .hartje {
-    width: 2em;
+    width: 1.9em;
     margin-right: 0.3em;
 }
 
@@ -187,7 +191,7 @@ aside form {
     opacity: 0.95;
     background-color: #e6b517;
     overflow-y: hidden;
-    transition: 5s ease-out;
+    transition: all 5s ease-out;
 }
 
 .hidden {
@@ -245,7 +249,7 @@ fieldset .titelFilter {
     background-color: yellow;
 }
 
-.oranje {
+label.oranje {
     background-color: orange;
 }
 
@@ -669,6 +673,9 @@ a:visited {
     background-image: url(images/gefrustreerd_background.png);
     background-size: contain;
     background-position: center;
+}
+.gefrustreerd .odd p{
+    transform: rotateX(10)
 }
 
 .mainGefrustreerd {
