@@ -56,10 +56,12 @@ function showKleuren() {
     setTimeout(function () {
         if (checked > 0) {
             document.querySelector("#kleurIcoon").classList.remove("hiddenDisplay");
+            document.querySelector("#kleurIcoon").classList.add("stretch");
             kleurLampje.classList.add("greenLampje");
             kleurLampje.classList.remove("redLampje");
         } else {
             document.querySelector("#kleurIcoon").classList.add("hiddenDisplay");
+            document.querySelector("#kleurIcoon").classList.remove("stretch");
             kleurLampje.classList.remove("greenLampje");
             kleurLampje.classList.add("redLampje");
         }
@@ -92,10 +94,12 @@ function showSfeer() {
     setTimeout(function () {
         if (checked > 0) {
             document.querySelector("#sfeerIcoon").classList.remove("hiddenDisplay");
+            document.querySelector("#sfeerIcoon").classList.add("stretch");
             sfeerwoordLampje.classList.add("greenLampje");
             sfeerwoordLampje.classList.remove("redLampje");
         } else {
             document.querySelector("#sfeerIcoon").classList.add("hiddenDisplay");
+            document.querySelector("#sfeerIcoon").classList.remove("stretch");
             sfeerwoordLampje.classList.remove("greenLampje");
             sfeerwoordLampje.classList.add("redLampje");
         }
@@ -128,10 +132,12 @@ function showLeestijd() {
     setTimeout(function () {
         if (checked > 0) {
             document.querySelector("#leestijdIcoon").classList.remove("hiddenDisplay");
+            document.querySelector("#leestijdIcoon").classList.add("stretch");
             leestijdLampje.classList.add("greenLampje");
             leestijdLampje.classList.remove("redLampje");
         } else {
             document.querySelector("#leestijdIcoon").classList.add("hiddenDisplay");
+            document.querySelector("#leestijdIcoon").classList.remove("stretch");
             leestijdLampje.classList.remove("greenLampje");
             leestijdLampje.classList.add("redLampje");
         }
@@ -165,10 +171,12 @@ function showTaalgebruik() {
     setTimeout(function () {
         if (checked > 0) {
             document.querySelector("#taalgebruikIcoon").classList.remove("hiddenDisplay");
+            document.querySelector("#taalgebruikIcoon").classList.add("stretch");
             taalgebruikLampje.classList.add("greenLampje");
             taalgebruikLampje.classList.remove("redLampje");
         } else {
             document.querySelector("#taalgebruikIcoon").classList.add("hiddenDisplay");
+            document.querySelector("#taalgebruikIcoon").classList.remove("stretch");
             taalgebruikLampje.classList.remove("greenLampje");
             taalgebruikLampje.classList.add("redLampje");
         }

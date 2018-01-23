@@ -8,6 +8,27 @@
     src: url('fonts/SimplisticSans-Normal.woff') format('woff2');
 }
 
+@keyframes stretch {
+    0% {
+        transform: scale(.3);
+        border-radius: 100%;
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.stretch {
+    animation-name: stretch;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
 body {
     position: relative;
     font-family: 'Segoe UI', Myriad, Verdana, sans-serif;
@@ -1103,7 +1124,7 @@ p {
     .even {
         margin-right: 40%;
     }
-    
+
     @keyframes roll {
         0% {
             transform: rotate(0);
