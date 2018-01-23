@@ -236,6 +236,9 @@ fieldset .titelFilter {
     padding-bottom: 0.5em;
     height: 1.7em;
 }
+fieldset{
+    padding-bottom: 0;
+}
 
 .kleurenFilters input {
     display: none;
