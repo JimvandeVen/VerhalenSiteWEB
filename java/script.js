@@ -5,6 +5,7 @@
 var inlogKnop = document.querySelector("#inlogKnop");
 var inlogPlek = document.querySelector("#inlogPlek");
 var main = document.querySelector(".main");
+
 function openInlog() {
     inlogPlek.classList.remove("hidden");
 }
@@ -24,10 +25,12 @@ var closeFilterButton = document.querySelector("#closeFilter");
 
 function openFilter() {
     overlay.classList.remove("hidden");
+    closeFilterButton.classList.remove('hiddenDisplay');
 }
 
 function closeFilter() {
     overlay.classList.add("hidden");
+    closeFilterButton.classList.add('hiddenDisplay');
 }
 
 filterButton.addEventListener("click", openFilter);
@@ -39,6 +42,7 @@ closeFilterButton.addEventListener("click", closeFilter);
 var i;
 var kleuren = document.querySelectorAll(".kleurFilter");
 var kleurenCheckbox = document.querySelectorAll(".kleurCheckbox");
+var kleurLampje = document.querySelector(".kleurLampje");
 
 function showKleuren() {
     var checked = 0;
@@ -51,9 +55,13 @@ function showKleuren() {
     }
     setTimeout(function () {
         if (checked > 0) {
-            document.querySelector("#kleurIcoon").classList.remove("hidden");
+            document.querySelector("#kleurIcoon").classList.remove("hiddenDisplay");
+            kleurLampje.classList.add("greenLampje");
+            kleurLampje.classList.remove("redLampje");
         } else {
-            document.querySelector("#kleurIcoon").classList.add("hidden");
+            document.querySelector("#kleurIcoon").classList.add("hiddenDisplay");
+            kleurLampje.classList.remove("greenLampje");
+            kleurLampje.classList.add("redLampje");
         }
     }, 10);
 
@@ -70,6 +78,7 @@ for (i = 0; i < kleuren.length; i++) {
 
 var sfeer = document.querySelectorAll(".sfeerFilter");
 var sfeerCheckbox = document.querySelectorAll(".sfeerCheckbox");
+var sfeerwoordLampje = document.querySelector(".sfeerwoordLampje");
 
 function showSfeer() {
     var checked = 0;
@@ -82,9 +91,13 @@ function showSfeer() {
     }
     setTimeout(function () {
         if (checked > 0) {
-            document.querySelector("#sfeerIcoon").classList.remove("hidden");
+            document.querySelector("#sfeerIcoon").classList.remove("hiddenDisplay");
+            sfeerwoordLampje.classList.add("greenLampje");
+            sfeerwoordLampje.classList.remove("redLampje");
         } else {
-            document.querySelector("#sfeerIcoon").classList.add("hidden");
+            document.querySelector("#sfeerIcoon").classList.add("hiddenDisplay");
+            sfeerwoordLampje.classList.remove("greenLampje");
+            sfeerwoordLampje.classList.add("redLampje");
         }
     }, 10);
 
@@ -101,7 +114,7 @@ for (i = 0; i < sfeer.length; i++) {
 var leestijdEvent = document.querySelectorAll(".leestijdEvent");
 var leestijd = document.querySelectorAll(".leestijdCheckbox");
 var leestijdCheckbox = document.querySelectorAll(".leestijdCheckbox");
-
+var leestijdLampje = document.querySelector(".leestijdLampje");
 
 function showLeestijd() {
     var checked = 0;
@@ -114,9 +127,13 @@ function showLeestijd() {
     }
     setTimeout(function () {
         if (checked > 0) {
-            document.querySelector("#leestijdIcoon").classList.remove("hidden");
+            document.querySelector("#leestijdIcoon").classList.remove("hiddenDisplay");
+            leestijdLampje.classList.add("greenLampje");
+            leestijdLampje.classList.remove("redLampje");
         } else {
-            document.querySelector("#leestijdIcoon").classList.add("hidden");
+            document.querySelector("#leestijdIcoon").classList.add("hiddenDisplay");
+            leestijdLampje.classList.remove("greenLampje");
+            leestijdLampje.classList.add("redLampje");
         }
     }, 10);
 
@@ -132,6 +149,8 @@ for (i = 0; i < leestijdEvent.length; i++) {
 var taalgebruikEvent = document.querySelectorAll(".taalgebruikEvent");
 var taalgebruik = document.querySelectorAll(".taalgebruikCheckbox");
 var taalgebruikCheckbox = document.querySelectorAll(".taalgebruikCheckbox");
+var taalgebruikLampje = document.querySelector(".taalgebruikLampje");
+
 
 
 function showTaalgebruik() {
@@ -145,9 +164,13 @@ function showTaalgebruik() {
     }
     setTimeout(function () {
         if (checked > 0) {
-            document.querySelector("#taalgebruikIcoon").classList.remove("hidden");
+            document.querySelector("#taalgebruikIcoon").classList.remove("hiddenDisplay");
+            taalgebruikLampje.classList.add("greenLampje");
+            taalgebruikLampje.classList.remove("redLampje");
         } else {
-            document.querySelector("#taalgebruikIcoon").classList.add("hidden");
+            document.querySelector("#taalgebruikIcoon").classList.add("hiddenDisplay");
+            taalgebruikLampje.classList.remove("greenLampje");
+            taalgebruikLampje.classList.add("redLampje");
         }
     }, 10);
 
@@ -165,11 +188,13 @@ var sorterenOverlay = document.querySelector(".sorteren");
 var closeSortButton = document.querySelector(".sluitSorteren");
 
 function openSorteren() {
-    sorterenOverlay.classList.remove("hidden");
+    sorterenOverlay.classList.remove("hiddenDisplay");
+    closeSortButton.classList.remove("hiddenDisplay");
 }
 
 function closeSorteren() {
-    sorterenOverlay.classList.add("hidden");
+    sorterenOverlay.classList.add("hiddenDisplay");
+    closeSortButton.classList.add("hiddenDisplay");
 }
 
 sorterenButton.addEventListener("click", openSorteren);
@@ -181,7 +206,7 @@ closeSortButton.addEventListener("click", closeSorteren);
 var sorterenEvent = document.querySelectorAll(".sorterenEvent");
 var sorteren = document.querySelectorAll(".sorterenCheckbox");
 var sorterenCheckbox = document.querySelectorAll(".sorterenCheckbox");
-
+var sorteerLampje = document.querySelectorAll(".sorteerLampje");
 
 function sorterenLampje() {
     var checked = 0;
@@ -194,11 +219,15 @@ function sorterenLampje() {
     }
     setTimeout(function () {
         if (checked > 0) {
-            document.querySelector(".sorteerLampje").style.backgroundColor = "#33cc33";
-            document.querySelector(".sorteerLampje").style.boxShadow = "inset 0 -0.25rem 0 #2eb82e";
+            for (i = 0; i < sorteerLampje.length; i++) {
+                sorteerLampje[i].classList.add("greenLampje");
+                sorteerLampje[i].classList.remove("redLampje");
+            }
         } else {
-            document.querySelector(".sorteerLampje").style.backgroundColor = "red";
-            document.querySelector(".sorteerLampje").style.boxShadow = "inset 0 -0.25rem 0 #cc0000";
+            for (i = 0; i < sorteerLampje.length; i++) {
+                sorteerLampje[i].classList.remove("greenLampje");
+                sorteerLampje[i].classList.add("redLampje");
+            }
         }
     }, 10);
 

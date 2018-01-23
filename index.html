@@ -361,10 +361,12 @@
             </ul>
         </section>
         <form>
-            <fieldset class="hidden sorteren">
-                <h2>Sorteren</h2>
+            <fieldset class="sorteren hiddenDisplay">
+                <h2>Sorteren
+                    <div class="sorteerLampje redLampje"></div>
+                </h2>
 
-                <button type="button" class="sluitSorteren">toepassen</button>
+                <button type="button" class="sluitSorteren hiddenDisplay">toepassen</button>
                 <input id="gelezenHL" class="sorterenEvent sorterenCheckbox" type="radio" name="sorteren">
                 <label for="gelezenHL" class="sorterenEvent sorterenCheckbox">Meest gekozen Hoog-Laag</label>
                 <input id="gelezenLH" class="sorterenEvent sorterenCheckbox" type="radio" value="female" name="sorteren">
@@ -381,7 +383,7 @@
         <section class="alleVerhalenSection">
             <h2>Alle verhalen</h2>
             <button class="sorterenKnop" type="button">Sorteren</button>
-            <div class="sorteerLampje"></div>
+            <div class="sorteerLampje redLampje"></div>
             <ul class="alleVerhalenList">
                 <li>
                     <article>
@@ -535,16 +537,16 @@
         </section>
     </main>
     <aside>
-        <img src="images/kleur_icon.png" class="hidden" alt="kleur icoon" id="kleurIcoon">
-        <img src="images/sfeer.png" class="hidden" alt="sfeer icoon" id="sfeerIcoon">
-        <img src="images/leestijd_icoon.png" class="hidden" alt="leestijd icoon" id="leestijdIcoon">
-        <img src="images/taalgebruik.png" class="hidden" alt="taalgebruik icoon" id="taalgebruikIcoon">
+        <img src="images/kleur_icon.png" class="hiddenDisplay" alt="kleur icoon" id="kleurIcoon">
+        <img src="images/sfeer.png" class="hiddenDisplay" alt="sfeer icoon" id="sfeerIcoon">
+        <img src="images/leestijd_icoon.png" class="hiddenDisplay" alt="leestijd icoon" id="leestijdIcoon">
+        <img src="images/taalgebruik.png" class="hiddenDisplay" alt="taalgebruik icoon" id="taalgebruikIcoon">
         <button type="button" id="filterButton" class="filterButton">Filteren</button>
         <form id="overlay" class="overlay hidden">
             <h2>Filters</h2>
-            <button type="button" class="sluitSorteren" id="closeFilter">toepassen</button>
+            <button type="button" class="hiddenDisplay" id="closeFilter">toepassen</button>
             <fieldset class="leestijdFieldset">
-                <label class="titelFilter">Leestijd</label>
+                <label class="titelFilter">Leestijd <div class="leestijdLampje redLampje"></div></label>
                 <input id="5" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
                 <label for="5" class="leestijdCheckbox leestijdEvent">5 min</label>
                 <input id="10" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
@@ -555,7 +557,7 @@
                 <label for="geenLeestijd" class="leestijdEvent">geen</label>
             </fieldset>
             <fieldset>
-                <label class="titelFilter">Taalgebruik</label>
+                <label class="titelFilter">Taalgebruik <div class="taalgebruikLampje redLampje"></div></label>
                 <input id="12" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
                 <label for="12" class="taalgebruikCheckbox taalgebruikEvent">12+</label>
                 <input id="16" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
@@ -566,7 +568,8 @@
                 <label for="geenTaalgebruik" class="taalgebruikEvent">geen</label>
             </fieldset>
             <fieldset class="sfeerwoord">
-                <label class="titelFilter">Sfeerwoord</label>
+                <label class="titelFilter">Sfeerwoord <div class="sfeerwoordLampje redLampje"></div></label>
+                <div class="leelijstLampje redLampje"></div>
                 <input id="willekeur" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
                 <label for="willekeur" class="sfeerFilter">willekeur</label>
                 <input id="komisch" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
@@ -579,7 +582,8 @@
                 <label for="geïrriteerd" class="sfeerFilter">geïrriteerd</label>
             </fieldset>
             <fieldset class="kleurenFilters">
-                <label id="kleurenFilters" class="titelFilter">Kleur</label>
+                <label id="kleurenFilters" class="titelFilter">Kleur <div class="kleurLampje redLampje"></div></label>
+                <div class="leelijstLampje redLampje"></div>
                 <input id="zwart" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
                 <label for="zwart" class="kleurFilter zwart"></label>
                 <input id="wit" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
