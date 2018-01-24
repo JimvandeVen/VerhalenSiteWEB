@@ -34,6 +34,16 @@
     animation-play-state: running;
 }
 
+.stretchHartje {
+    animation-name: stretch;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 1.5;
+    animation-play-state: running;
+}
+
 body {
     position: relative;
     font-family: 'Segoe UI', Myriad, Verdana, sans-serif;
@@ -878,6 +888,10 @@ a:visited {
     margin-right: 1em;
 }
 
+.verhalend form {
+    margin-top: 15em;
+}
+
 /*
 .typewriter {
     overflow: hidden;
@@ -1147,25 +1161,25 @@ margin: 0;
     #taalgebruikIcoon {
         max-width: 6em;
         bottom: 1em;
-        left: 3.5em;
+        left: 13.5em;
     }
 
     #leestijdIcoon {
         max-width: 4.5em;
         bottom: 1em;
-        left: 12.5em;
+        left: 20.5em;
     }
 
     #sfeerIcoon {
         max-width: 1.5em;
         bottom: 1em;
-        right: 5.5em;
+        right: 13.5em;
     }
 
     #kleurIcoon {
         max-width: 5em;
         bottom: 1em;
-        right: 15.5em;
+        right: 20.5em;
     }
 
     .sorteerLampje {
@@ -1225,29 +1239,4 @@ margin: 0;
     p {
         font-size: 2.5em;
     }
-}
-
-
-
-@media (min-width: 1023px) {
-
-    /*
-    .verhalenSection article {
-        width: 30em
-    }
-    .verhalenSection article img:nth-of-type(3) {
-        width: 30em;
-    }
-    
-    h3{
-        width: inherit;
-    }
-    
-    .verhalenSection .comment {
-        left: 23.5em;
-    }
-    .verhalenSection .leeslijst {
-    left: 27em;
-}
-*/
 }

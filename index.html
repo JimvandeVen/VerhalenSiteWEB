@@ -70,7 +70,8 @@
                             <dd class="aantalLikes">8</dd>
                         </dl>
                         <dl class="likes">
-                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dt> <img class="hartje hartjeLeeg" src="images/hartje_leeg.png" alt="aantal likes">
+                            <img class="hartje stretchHartje hartjeVol hiddenDisplay" src="images/hartje_vol.png" alt="aantal likes"></dt>
                             <dd class="aantalLikes">10</dd>
                         </dl>
                     </article>
@@ -363,7 +364,7 @@
         <form>
             <fieldset class="sorteren hiddenDisplay">
                 <h2>Sorteren
-                    <div class="sorteerLampje redLampje" id="sorteerLampje"></div>
+                    <span class="sorteerLampje redLampje" id="sorteerLampje"></span>
                 </h2>
 
                 <button type="button" class="sluitSorteren hiddenDisplay">toepassen</button>
@@ -546,7 +547,7 @@
             <h2>Filters</h2>
             <button type="button" class="hiddenDisplay" id="closeFilter">toepassen</button>
             <fieldset class="leestijdFieldset">
-                <label class="titelFilter">Leestijd <div class="leestijdLampje redLampje"></div></label>
+                <label class="titelFilter">Leestijd <span class="leestijdLampje redLampje"></span></label>
                 <input id="5" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
                 <label for="5" class="leestijdCheckbox leestijdEvent">5 min</label>
                 <input id="10" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
@@ -557,7 +558,7 @@
                 <label for="geenLeestijd" class="leestijdEvent">geen</label>
             </fieldset>
             <fieldset>
-                <label class="titelFilter">Taalgebruik <div class="taalgebruikLampje redLampje"></div></label>
+                <label class="titelFilter">Taalgebruik <span class="taalgebruikLampje redLampje"></span></label>
                 <input id="12" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
                 <label for="12" class="taalgebruikCheckbox taalgebruikEvent">12+</label>
                 <input id="16" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
@@ -568,7 +569,7 @@
                 <label for="geenTaalgebruik" class="taalgebruikEvent">geen</label>
             </fieldset>
             <fieldset class="sfeerwoord">
-                <label class="titelFilter">Sfeerwoord <div class="sfeerwoordLampje redLampje"></div></label>
+                <label class="titelFilter">Sfeerwoord <span class="sfeerwoordLampje redLampje"></span></label>
                 <div class="leelijstLampje redLampje"></div>
                 <input id="willekeur" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
                 <label for="willekeur" class="sfeerFilter">willekeur</label>
@@ -582,7 +583,7 @@
                 <label for="geïrriteerd" class="sfeerFilter">geïrriteerd</label>
             </fieldset>
             <fieldset class="kleurenFilters">
-                <label id="kleurenFilters" class="titelFilter">Kleur <div class="kleurLampje redLampje"></div></label>
+                <label id="kleurenFilters" class="titelFilter">Kleur <span class="kleurLampje redLampje"></span></label>
                 <div class="leelijstLampje redLampje"></div>
                 <input id="zwart" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
                 <label for="zwart" class="kleurFilter zwart"></label>

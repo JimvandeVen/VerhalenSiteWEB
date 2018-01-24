@@ -242,3 +242,22 @@ function sorterenLampje() {
 for (i = 0; i < sorterenEvent.length; i++) {
     sorterenEvent[i].addEventListener("click", sorterenLampje);
 }
+
+
+/* LIKES */
+var hartjeLeeg = document.querySelector(".hartjeLeeg");
+var hartjeVol = document.querySelector(".hartjeVol");
+
+function likesToggle() {
+    if (hartjeVol.classList.contains("hiddenDisplay")) {
+        hartjeLeeg.classList.add("hiddenDisplay");
+        hartjeVol.classList.remove("hiddenDisplay");
+    }
+    else{
+        hartjeVol.classList.add("hiddenDisplay");
+        hartjeLeeg.classList.remove("hiddenDisplay");
+    }
+}
+
+hartjeVol.addEventListener("click", likesToggle);
+hartjeLeeg.addEventListener("click", likesToggle);
