@@ -128,6 +128,10 @@ article dl {
     left: 14.5em;
 }
 
+.comment:active {
+    top: 1em;
+}
+
 .hartje {
     width: 1.9em;
     margin-right: 0.3em;
@@ -652,7 +656,7 @@ form label {
     color: #003082;
     text-overflow: ellipsis;
     padding-left: 1em;
-    margin-right: 2em;
+    margin-right: 40%;
 }
 
 form input[type="email"]:valid {
@@ -1055,6 +1059,13 @@ p {
         margin-left: 1em;
     }
 
+    .tabs {
+        justify-content: flex-start;
+    }
+    .tabsAanmelden {
+        margin-left: 1em;
+    }
+
     #taalgebruikIcoon {
         max-width: 6em;
         bottom: 1em;
@@ -1133,8 +1144,13 @@ p {
             transform: rotate(360deg);
         }
     }
+    p {
+        font-size: 2.5em;
+    }
 
 }
+
+
 
 @media (min-width: 1023px) {
 
