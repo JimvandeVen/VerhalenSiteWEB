@@ -69,8 +69,6 @@ function showKleuren() {
 
 }
 
-
-
 for (i = 0; i < kleuren.length; i++) {
     kleuren[i].addEventListener("click", showKleuren);
 }

@@ -8,6 +8,11 @@
     src: url('fonts/SimplisticSans-Normal.woff') format('woff2');
 }
 
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('fonts/SimplisticSans-Normal.woff') format('woff2');
+}
+
 @keyframes stretch {
     0% {
         transform: scale(.3);
@@ -785,7 +790,7 @@ a:visited {
     margin-left: 2em;
 }
 
-p {
+.gefrustreerd p {
     font-family: "SciFly Sans";
     word-break: break-all;
 }
@@ -823,6 +828,16 @@ p {
 
 }
 
+.verwardEven {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.verwardOdd {
+    -webkit-filter: blur(0.5px);
+    filter: blur(0.8px);
+}
+
 .verwardeMan .titel {
     max-height: 4em;
     max-width: 90%;
@@ -849,8 +864,63 @@ p {
     background-image: url(images/verhalend_background.png);
     background-size: cover;
     overflow: visible;
+}
 
+.verhalend p * {
+    color: black;
+    text-decoration: none;
+    font-family: "Museo Sans";
+}
 
+.verhalend p {
+    font-family: "Museo Sans";
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+
+border-right: .15em solid orange;
+/* The typwriter cursor */
+
+white-space: nowrap;
+/* Keeps the content on a single line */
+
+margin: 0 auto;
+/* Gives that scrolling effect as the typing happens */
+
+animation: typing 3.5s steps(40,
+end),
+blink-caret .75s step-end infinite;
+margin: 0;
+}
+
+*/ .verhalend {}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }
 
 @media (min-width: 36em) {
@@ -1038,6 +1108,14 @@ p {
         margin-bottom: 3em;
     }
 
+    /*VERWARDEMAN*/
+    .verwardeMan .titel {
+        max-height: 15em;
+        max-width: 95%;
+        margin-top: 2em;
+    }
+
+
 
 
 }
@@ -1147,7 +1225,6 @@ p {
     p {
         font-size: 2.5em;
     }
-
 }
 
 
