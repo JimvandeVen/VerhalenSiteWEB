@@ -838,15 +838,6 @@ a:visited {
 
 }
 
-.verwardEven {
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
-}
-
-.verwardOdd {
-    -webkit-filter: blur(0.5px);
-    filter: blur(0.8px);
-}
 
 .verwardeMan .titel {
     max-height: 4em;
@@ -855,17 +846,19 @@ a:visited {
 }
 
 .verward {
-    background-image: url(images/verward_p_background.png);
     background-size: cover;
     background-position: center;
     overflow: visible;
-    padding: 4em;
+    padding: 1em;
     color: white;
 }
 
 .pVerward {
     font-family: "VPRO Vesta";
     word-break: normal;
+    background-color: rgba(49, 47, 46, .3);
+    text-align: center;
+    border-radius: 1em;
 }
 
 /*VERHALEND*/
@@ -886,11 +879,78 @@ a:visited {
     font-family: "Museo Sans";
     margin-left: 1em;
     margin-right: 1em;
+    text-align: center
 }
 
 .verhalend form {
     margin-top: 15em;
 }
+
+.verhalend .hoofdstuk1 {
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5em;
+    background-color: #E7D0D5;
+    box-shadow: inset 0 -0.125rem 0 #C5B4AF;
+
+}
+
+.verhalend .hoofdstuk2 {
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5em;
+    background-color: #E7D0D5;
+    box-shadow: inset 0 -0.125rem 0 #C5B4AF;
+}
+
+.verhalend .hoofdstuk3 {
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5em;
+    background-color: #E7D0D5;
+    box-shadow: inset 0 -0.125rem 0 #C5B4AF;
+}
+
+.verhalend .hoofdstuk4 {
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.5em;
+    background-color: #E7D0D5;
+    box-shadow: inset 0 -0.125rem 0 #C5B4AF;
+}
+
+.hoofdstuk1:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 -3.125rem 0 #C5B4AF;
+}
+
+.hoofdstuk2:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 -3.125rem 0 #C5B4AF;
+}
+
+.hoofdstuk3:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 -3.125rem 0 #C5B4AF;
+}
+
+.hoofdstuk4:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 -3.125rem 0 #C5B4AF;
+}
+
 
 /*
 .typewriter {
@@ -1124,14 +1184,10 @@ margin: 0;
 
     /*VERWARDEMAN*/
     .verwardeMan .titel {
-        max-height: 15em;
+        max-height: 10em;
         max-width: 95%;
         margin-top: 2em;
     }
-
-
-
-
 }
 
 @media (min-width: 63em) {
@@ -1202,21 +1258,8 @@ margin: 0;
     }
 
     .odd,
-    .even,
-    .verwardOdd,
-    .verwardEven {
+    .even {
         margin: 6em;
-    }
-    .verwardEven {
-        background-position: center;
-        background-clip: padding-box;
-        margin-left: 30%;
-    }
-
-    .verwardOdd {
-        background-position: center;
-        background-clip: padding-box;
-        margin-right: 10%;
     }
 
     .odd {
