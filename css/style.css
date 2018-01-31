@@ -868,6 +868,9 @@ a:visited {
     background-size: cover;
     overflow: visible;
 }
+.verhalend .titel{
+    margin-top: 1em;
+}
 
 .verhalend p * {
     color: black;
