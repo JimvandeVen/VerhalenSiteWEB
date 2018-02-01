@@ -868,7 +868,8 @@ a:visited {
     background-size: cover;
     overflow: visible;
 }
-.verhalend .titel{
+
+.verhalend .titel {
     margin-top: 1em;
 }
 
@@ -1057,6 +1058,11 @@ margin: 0;
 
     .hartje {
         width: 3em;
+    }
+
+    .hartje:hover {
+        cursor: pointer;
+
     }
 
     .aantalLikes {
