@@ -760,6 +760,8 @@ a:visited {
     background-image: url(images/gefrustreerd_background.png);
     background-size: contain;
     background-position: center;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .gefrustreerd .odd {
@@ -866,7 +868,8 @@ a:visited {
 .verhalend {
     background-image: url(images/verhalend_background.png);
     background-size: cover;
-    overflow: visible;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .verhalend .titel {
